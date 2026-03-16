@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechZone Electronics Online Store</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background-color:#f4f4f4;
+        }
+
+        header{
+            background-color:#1f4e79;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background-color:#333;
+            padding:10px;
+        }
+
+        nav ul{
+            list-style:none;
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content:center;
+        }
+
+        nav ul li{
+            margin:0 15px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            text-decoration:underline;
+        }
+
+        section{
+            padding:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+        }
+
+        table, th, td{
+            border:1px solid #ccc;
+        }
+
+        th{
+            background-color:#1f4e79;
+            color:white;
+            padding:10px;
+        }
+
+        td{
+            padding:10px;
+            text-align:center;
+        }
+
+        form{
+            background:white;
+            padding:20px;
+            border:1px solid #ccc;
+            width:60%;
+            margin:auto;
+        }
+
+        form label{
+            font-weight:bold;
+        }
+
+        input, select, textarea{
+            width:100%;
+            padding:8px;
+            margin-top:5px;
+            margin-bottom:15px;
+        }
+
+        button{
+            background-color:#1f4e79;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color:#163a5c;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TechZone Electronics</h1>
+    <h2>TechZone Electronics Online Store</h2>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Order Form</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h2>Available Products</h2>
+
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price (Ksh)</th>
+        </tr>
+
+        <tr>
+            <td>P001</td>
+            <td>Laptop</td>
+            <td>Computers</td>
+            <td>65000</td>
+        </tr>
+
+        <tr>
+            <td>P002</td>
+            <td>Smartphone</td>
+            <td>Mobile Devices</td>
+            <td>32000</td>
+        </tr>
+
+        <tr>
+            <td>P003</td>
+            <td>Wireless Mouse</td>
+            <td>Accessories</td>
+            <td>1500</td>
+        </tr>
+
+        <tr>
+            <td>P004</td>
+            <td>External Hard Drive</td>
+            <td>Storage</td>
+            <td>8000</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Customer Order Form</h2>
+
+    <form>
+
+        <label>Customer Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label>Product:</label>
+        <select name="product">
+            <option>Laptop</option>
+            <option>Smartphone</option>
+            <option>Wireless Mouse</option>
+            <option>External Hard Drive</option>
+        </select>
+
+        <label>Quantity:</label>
+        <input type="number" name="quantity" min="1" required>
+
+        <label>Delivery Address:</label>
+        <textarea rows="4"></textarea>
+
+        <label>Payment Method:</label><br>
+        <input type="radio" name="payment"> M-Pesa<br>
+        <input type="radio" name="payment"> Card<br>
+        <input type="radio" name="payment"> Cash on Delivery<br><br>
+
+        <button type="submit">Submit Order</button>
+
+    </form>
+</section>
+
+<footer>
+    <p>Contact: info@techzone.co.ke</p>
+    <p>© 2026 TechZone Electronics. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
